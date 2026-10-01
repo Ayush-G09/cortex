@@ -1,0 +1,20 @@
+{
+  "name": "@cortex/train",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "prepare-data": "tsx scripts/prepare-data.mts",
+    "prepare-samples": "tsx scripts/prepare-samples.mts",
+    "train": "tsx scripts/train.mts"
+  },
+  "dependencies": {
+    "@cortex/tensor": "*",
+    "@cortex/nn": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "mnist": "^1.1.0"
+  }
+}
